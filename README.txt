@@ -4,7 +4,7 @@ Jenkins
 ssh -i "demo.pem" ubuntu@ec2-18-118-198-107.us-east-2.compute.amazonaws.com
 
 QAMatser node
- ssh -i "PROD.pem" ubuntu@ec2-18-188-194-170.us-east-2.compute.amazonaws.com
+ssh -i "PROD.pem" ubuntu@ec2-3-15-156-139.us-east-2.compute.amazonaws.com
 
 QAWorkerNode
 ssh -i "PROD.pem" ubuntu@ec2-3-12-85-187.us-east-2.compute.amazonaws.com
