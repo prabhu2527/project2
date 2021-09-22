@@ -1,6 +1,7 @@
 project2
 
 Jenkins
+ssh -i "demo.pem" ubuntu@ec2-18-118-198-107.us-east-2.compute.amazonaws.com
 
 QAMatser node
  ssh -i "PROD.pem" ubuntu@ec2-18-188-194-170.us-east-2.compute.amazonaws.com
@@ -17,6 +18,9 @@ PRODWorkerNode
 
 sudo ansible --inventory /etc/ansible/myinv_project2 all -m ping -u ubuntu --private-key /etc/ansible/PROD.pem
 
+Jenkins
+
+Package
 cd /var/lib/jenkins/workspace/package/
 sudo docker build --file Dockerfile --tag prabhu2527/samplejavaapp:$BUILD_NUMBER .
 sudo docker login -u prabhu2527 -p $DOCKER_HUB_PWD
